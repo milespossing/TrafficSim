@@ -1,16 +1,16 @@
 import trafficsimcore.utilities
 
 class Car():
-    def __init__(self):
-        self.location = 0.0
+    def __init__(self,location=0.0):
+        self.location = location
         self.speed = 0.0
 
 
 
 
 class RegularDriver(Car):
-    def __init__(self):
-        super().__init__()
+    def __init__(self,location=0.0):
+        super().__init__(location)
         self.minimumDistance = 10.0
         self.maxSpeed = 31
         self.accelerationRate = 10.0
